@@ -1,1 +1,58 @@
 /* Custom Overrides */
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+/* Header area */
+.navbar-nav .nav-link, .navbar-brand, .dropdown-item {
+  text-transform: none;
+  
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 500;
+  row-gap: 2rem;
+}
+
+.carousel-inner > .carousel-item > img {
+    width: 640px; 
+    height: 560px; 
+    object-fit: cover; 
+    object-position: center;
+}
+
+.main-banner-title {
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.25)
+    ),
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner > .carousel-item > img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-caption {
+  position: absolute;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.main-banner-title {
+  margin: 0;
+}
+
+
