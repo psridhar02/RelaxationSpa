@@ -7,7 +7,6 @@ body {
 /* Header area */
 .navbar-nav .nav-link, .navbar-brand, .dropdown-item {
   text-transform: none;
-  
 }
 
 .logo {
@@ -23,19 +22,25 @@ body {
     object-position: center;
 }
 
-.main-banner-title {
-  height: 600px;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.25),
-      rgba(255, 255, 255, 0.25)
-    ),
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main-banner-text {
+    margin-top: 70px;
+    text-align: center;
 }
 
+.main-banner-title {
+  font-size: 2.2rem;   /* Make thinner */
+  font-weight: 600;    /* Lighter */
+  color: #333;         /* Or a soft gray if background is white */
+  letter-spacing: 2px;
+}
+
+h1 {
+    letter-spacing: 3px;
+    margin-top: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: lowercase;
+}
 .carousel-inner > .carousel-item > img {
   width: 100%;
   height: 560px;
@@ -49,10 +54,6 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   text-shadow: 1px 1px 1px #000;
-}
-
-.main-banner-title {
-  margin: 0;
 }
 
 
