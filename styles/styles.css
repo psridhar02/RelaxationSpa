@@ -123,3 +123,25 @@ h5 {
     font-weight: bold;
 }
 
+/* Instagram anf Hours */
+.instagram-preview {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.instagram-preview strong {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+}
+
+.hours-location {
+  background-color: #f8f9fa;
+  border-left: 10px solid #d29b49;
+}
+
+.hours-location h4 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
