@@ -90,9 +90,12 @@
     </header>
         <main>
             <section>
+                <!--Add the slogan-->
                 <section class="main-banner-text">
                     <h1 class="main-banner-title">aloha, unwind, and find your calm.</h1>
                 </section>
+
+                <!--Add the carousal with autoplaying features-->
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active position-relative">
@@ -114,6 +117,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </section>
+            <!--Create a container with the tagline-->
             <section class="container">
                 <section class="row my-4">
                 <p class="col tagline">
@@ -122,7 +126,8 @@
                 </p>
                 </section>
                 <hr class="opacity-50" />
-
+                
+                <!--Create the about section for spa-->
                 <section class="row my-4">
                     <h2 class="col col-12 section-title">Honululu's Premier Coastal Spa</h2>
                     <p class="lead text-center">
@@ -132,9 +137,12 @@
                     </p>
                 </section>
                 
+                <!--What users can click on-->
                 <section class="row my-4">
                     <section class="col col-12 col-lg">
-                        <h4 class="column-heading">Oceanfront Massages</h4>
+                        <div class="text-center">
+                            <h4 class="column-heading">Oceanfront Massages</h4>
+                        </div>
                         <img 
                             class="massages-img w-100" 
                             src="./images/oceanfrontmassages.jpg" 
@@ -148,7 +156,9 @@
                     </section>
 
                     <section class="col col-12 col-lg">
-                        <h4 class="column-heading">Luxury Amenities</h4>
+                        <div class="text-center">
+                            <h4 class="column-heading">Luxury Amenities</h4>
+                        </div>
                         <img 
                             class="facials-img w-100" 
                             src="./images/sauna.jpg" 
@@ -163,7 +173,9 @@
                     </section>
 
                      <section class="col col-12 col-lg">
-                        <h4 class="column-heading">Relaxation Lounge</h4>
+                        <div class="text-center">
+                            <h4 class="column-heading">Relaxation Lounge</h4>
+                        </div>
                         <img 
                             class="facials-img w-100" 
                             src="./images/lounge.jpg" 
@@ -176,6 +188,51 @@
                         </div>
                      </section>
                 </section>
+                <hr class="opacity-50" />
+
+                <!-- Add Reviews or Testimonials -->
+                <section class="my-5">
+                    <h2 class="text-center mb-4">Customer Reviews</h2>
+
+                    <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="review text-center p-4">
+                                    <h5>⭐️⭐️⭐️⭐️⭐️ — Sarah T.</h5>
+                                    <p>"Absolutely incredible experience! The oceanfront massage was beyond relaxing. Will definitely be back."</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="review text-center p-4">
+                                    <h5>⭐️⭐️⭐️⭐️ — Alex M.</h5>
+                                    <p>"Loved the steam room and the staff was super friendly. One star off only because the lounge got a little crowded."</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="review text-center p-4">
+                                    <h5>⭐️⭐️⭐️⭐️⭐️ — Priya K.</h5>
+                                    <p>"This spa is my new go-to. From the views to the amenities, everything felt luxurious and peaceful."</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Optional carousel controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </section>
+
+
+
+
+
             </section>
 
         </main>
