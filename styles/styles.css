@@ -2,11 +2,11 @@
 
 body {
   font-family: "Playfair Display", serif;
-  background-image: url('https://i.pinimg.com/736x/5b/64/3a/5b643a94642c06f642350732b7f153bc.jpg'); /* Change the path to your actual image */
+  background-image: url("https://i.pinimg.com/736x/5b/64/3a/5b643a94642c06f642350732b7f153bc.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
 
 /* Header area */
@@ -124,24 +124,24 @@ h1 {
 
 /* Testimonials */
 h5 {
-    text-transform: none;
-    font-weight: bold;
+  text-transform: none;
+  font-weight: bold;
 }
 
 .review {
-    border: 1px solid #dbdbdb;
-    box-shadow: 10px 30px 50px rgba(0,0,0,0.05);
+  border: 1px solid #dbdbdb;
+  box-shadow: 10px 30px 50px rgba(0, 0, 0, 0.05);
 }
 
 /* Instagram anf Hours */
 .instagram-preview {
   background-color: #fff;
   border: 1px solid #dbdbdb;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .instagram-preview strong {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 1rem;
 }
 
@@ -157,29 +157,24 @@ h5 {
 
 /* Footer */
 .footer {
-  padding: 0.5rem 1rem;         
-  font-size: 0.9rem;            
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
 }
 
 .footer .row {
-  align-items: center;         
+  align-items: center;
 }
 
 .footer .social {
-  list-style: none;           
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 1rem;                    
+  gap: 1rem;
 }
 
 .footer .icon {
-  width: 20px;                 
+  width: 20px;
   height: 20px;
 }
-
-
-
-
-
