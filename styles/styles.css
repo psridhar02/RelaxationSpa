@@ -2,6 +2,11 @@
 
 body {
   font-family: "Playfair Display", serif;
+  background-image: url('https://i.pinimg.com/736x/5b/64/3a/5b643a94642c06f642350732b7f153bc.jpg'); /* Change the path to your actual image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
 }
 
 /* Header area */
