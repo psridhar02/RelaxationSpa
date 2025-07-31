@@ -155,6 +155,19 @@ h5 {
   margin-bottom: 0.5rem;
 }
 
+/* Gallery */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0; /* no space between images */
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Footer */
 .footer {
   padding: 0.5rem 1rem;
