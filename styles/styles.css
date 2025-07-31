@@ -65,6 +65,10 @@ h1 {
   text-transform: lowercase;
 }
 
+h2{
+  text-transform: lowercase;
+}
+
 /* Tagline */
 .tagline,
 .section-title {
