@@ -112,87 +112,92 @@
                 </button>
             </section>
             <!-- Place this inside your <main> tag, right after the carousel -->
-<section class="container my-5">
-  <h2 class="text-center mb-4">Book Your Hawaiian Escape 🌺</h2>
-  <form class="row g-3" action="#" method="post">
-    <div class="col-md-6">
-      <label for="name" class="form-label">Full Name</label>
-      <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-    </div>
-    <div class="col-md-6">
-      <label for="email" class="form-label">Email Address</label>
-      <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-    </div>
-    <div class="col-md-6">
-      <label for="phone" class="form-label">Phone Number</label>
-      <input type="tel" class="form-control" id="phone" placeholder="(123) 456-7890" required>
-    </div>
-    <!-- Service Category -->
-<div class="col-md-6">
-  <label for="category" class="form-label">Select a Category</label>
-  <select class="form-select" id="category" required>
-    <option selected disabled value="">Choose...</option>
-    <option value="massage">Massage</option>
-    <option value="facial">Facial</option>
-  </select>
-</div>
+            
+           <section class="container my-5">
+                <h2 class="text-center mb-4">Book Your Hawaiian Escape 🌺</h2>
+                <form class="row g-3" action="https://formspree.io/f/myzppjzp" method="post">
+                    <div class="col-md-6">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="First, Last Name" required>
+                    </div>
+                    <div class="col-md-6">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="(xxx) xxx-xxxx" required>
+                    </div>
 
-<!-- Dynamic Service Options -->
-<div class="col-md-6">
-  <label for="service" class="form-label">Select a Service</label>
-  <select class="form-select" id="service" required>
-    <option selected disabled value="">Choose a category first...</option>
-  </select>
-</div>
+                    <!-- Services -->
+                    <div class="col-md-6">
+                    <label for="category" class="form-label">Select a Category</label>
+                    <select class="form-select" id="category" name="category" required>
+                        <option selected disabled value="">Select</option>
+                        <option value="massage">Massage</option>
+                        <option value="facial">Facial</option>
+                    </select>
+                    </div>
 
-  <div class="col-12">
-    <label for="comments" class="form-label">Additional Comments</label>
-    <textarea class="form-control" id="comments" name="Comments" rows="3" placeholder="Let us know any preferences or notes..."></textarea>
-</div>
+                    <div class="col-md-6">
+                    <label for="service" class="form-label">Select a Service</label>
+                    <select class="form-select" id="service" name="service" required>
+                        <option selected disabled value="">Please choose a category</option>
+                    </select>
+                    </div>
 
-<!-- Add this script below the form (or in a <script> tag at the bottom of the page) -->
-<script>
-  const categorySelect = document.getElementById('category');
-  const serviceSelect = document.getElementById('service');
+                    <!-- Additional Comments side-by-side with service -->
+                    <div class="col-md-6">
+                    <label for="comments" class="form-label">Additional Comments</label>
+                    <textarea class="form-control" id="comments" name="Comments" rows="3" placeholder="Please let us know any preferences or notes"></textarea>
+                    </div>
 
-  const services = {
-    massage: [
-      "Coastal Oasis Massage",
-      "Island Stone Massage",
-      "Aloha Aromatherapy Massage",
-      "Sunset Serenity Massage",
-      "Mana Rebalance Massage"
-    ],
-    facial: [
-      "Tropical Glow Facial",
-      "Island Radiance Facial",
-      "Hibiscus Hydration Facial",
-      "Lomi Lomi Lift Facial",
-      "Volcanic Pore Refining Facial"
-    ]
-  };
+                    <!-- Submit Button Full Width -->
+                    <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary btn-md mt-3 px-5">Submit Booking</button>
+                    </div>
+                </form>
+                </section>
 
-  categorySelect.addEventListener('change', function () {
-    const selectedCategory = this.value;
-    const options = services[selectedCategory] || [];
+                <!-- Script at the end of body -->
+                <script>
+                const categorySelect = document.getElementById('category');
+                const serviceSelect = document.getElementById('service');
 
-    // Clear previous options
-    serviceSelect.innerHTML = '<option selected disabled value="">Choose a service...</option>';
+                const services = {
+                    massage: [
+                    "Island Stone Massage",
+                    "The Coastal Oasis Massage",
+                    "Aloha Aromatherapy Massage",
+                    "Sunset Serenity Massage",
+                    "Mana Rebalance Massage"
+                    ],
+                    facial: [
+                    "The Lani Glow Facial",
+                    "Ocean Whisper Facial",
+                    "Hale Ho'ola Healing Facial",
+                    "Plumeria Petal Facial",
+                    "Island Wind Detox Facial"
+                    ]
+                };
 
-    // Add new options
-    options.forEach(service => {
-      const option = document.createElement('option');
-      option.value = service;
-      option.textContent = service;
-      serviceSelect.appendChild(option);
-    });
+                categorySelect.addEventListener('change', function () {
+                    const selectedCategory = this.value;
+                    const options = services[selectedCategory] || [];
 
-    serviceSelect.disabled = options.length === 0;
-  });
-</script>
+                    serviceSelect.innerHTML = '<option selected disabled value="">Choose a service...</option>';
 
-  </form>
-</section>
+                    options.forEach(service => {
+                    const option = document.createElement('option');
+                    option.value = service;
+                    option.textContent = service;
+                    serviceSelect.appendChild(option);
+                    });
+
+                    serviceSelect.disabled = options.length === 0;
+                });
+                </script>
+
 
 
 
