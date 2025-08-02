@@ -26,3 +26,4 @@ Coastal Oasis Spa is a fictional luxury relaxation spa based in Honolulu, design
 3. Incorporate animations for a more dynamic user experience.
 
 ## View website: https://psridhar02.github.io/RelaxationSpa/
+## GitHub Repo Link: https://github.com/psridhar02/RelaxationSpa 
